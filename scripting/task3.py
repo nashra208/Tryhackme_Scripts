@@ -6,7 +6,7 @@ from cryptography.exceptions import InvalidTag
 import socket 
 import hashlib
 
-server_ip = "10.10.165.40"
+server_ip = <IP_Address>
 port = 4000
 
 # first creating socket object 
