@@ -2,7 +2,7 @@
 import socket
 
 # Hard-coded IP
-target_ip = "10.10.36.65"
+target_ip = <IP_address>
 
 # Declaring request snippet
 request = "GET / HTTP/1.1\r\nHost: %s\r\n\r\n" % target_ip
@@ -56,23 +56,5 @@ while True:
 # Only after a successful connection does it read the response, split it, and apply the operation to value.
 print("\nValue: %.2f" % value)
             
-            # Optional: small delay to avoid flooding
-            # time.sleep(0.01)
-
-
-# establishing the connection to the server
-# s= socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# s.connect((host, port))
-# print(f"[+] Connected to {host}:{port}")
-
-# # send request to the server
-# request = "GET / HTTp/1.1\r\nHost:10.10.36.65\r\nConnection: close\r\n\r\n"
-# s.sendall(request.encode())
-
-# while True:
-#     response = s.recv(1024).decode()
-#     if not response:
-#         print('No response')
-#         break
-#     print(response)
+           
 
